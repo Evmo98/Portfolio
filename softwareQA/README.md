@@ -6,5 +6,6 @@ This is a collection of all my work taken in my Software QA class at the Univers
  - [Cucumber](Gherkin_Cucumber)
  - [Stochastic Testing](JUnit_Quickcheck)
  - [Unit Testing](Unit_Testing)
+ - [Unit Testing & Code Coverage](JUnit_Coverage)
  - [Automated GUI Testing](Selenium)
  - [Profiling & Pinning Tests](VisualVM)
