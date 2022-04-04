@@ -10,3 +10,4 @@ This is a collection of all my work taken in my Software QA class at the Univers
  - [Automated GUI Testing](Selenium)
  - [Additional Automated GUI Testing](More_Selenium)
  - [Profiling & Pinning Tests](VisualVM)
+ - [Performance Testing](Performance)
