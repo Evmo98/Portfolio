@@ -8,4 +8,5 @@ This is a collection of all my work taken in my Software QA class at the Univers
  - [Unit Testing](Unit_Testing)
  - [Unit Testing & Code Coverage](JUnit_Coverage)
  - [Automated GUI Testing](Selenium)
+ - [Additional Automated GUI Testing](More_Selenium)
  - [Profiling & Pinning Tests](VisualVM)
