@@ -7,3 +7,4 @@ This is a collection of all my work taken in my Software QA class at the Univers
  - [Stochastic Testing](JUnit_Quickcheck)
  - [Unit Testing](Unit_Testing)
  - [Automated GUI Testing](Selenium)
+ - [Profiling & Pinning Tests](VisualVM)
