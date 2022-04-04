@@ -1,0 +1,377 @@
+{
+  "id": "e5d9cb5f-95ea-488f-bfe0-dd7571c9fbf1",
+  "version": "2.0",
+  "name": "1632 Exercise 3",
+  "url": "https://www.reddit.com",
+  "tests": [{
+    "id": "4bd0fce8-a89d-40c9-81a2-986e11705484",
+    "name": "FUN-TITLE",
+    "commands": [{
+      "id": "5c161058-4723-4faa-92e8-0e0189baf3b8",
+      "comment": "",
+      "command": "open",
+      "target": "/r/cats",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f8c76f2-7a1a-4fbc-afac-3618f0347342",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Cats",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d966645d-2eee-4c69-8084-23bf04e6fb19",
+    "name": "FUN-SORT-BY-COMMENTS",
+    "commands": [{
+      "id": "27b60adb-c402-4efc-9244-eed82488e0e8",
+      "comment": "",
+      "command": "open",
+      "target": "/r/cats/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04271e9d-c0f1-43ab-811b-2ef18355f726",
+      "comment": "",
+      "command": "click",
+      "target": "id=header-search-bar",
+      "targets": [
+        ["id=header-search-bar", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-bar", "css:finder"],
+        ["xpath=//input[@id='header-search-bar']", "xpath:attributes"],
+        ["xpath=//div[@id='SearchDropdown']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9511cfcf-e6c2-474c-83cf-761b4792c29b",
+      "comment": "",
+      "command": "type",
+      "target": "id=header-search-bar",
+      "targets": [
+        ["id=header-search-bar", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-bar", "css:finder"],
+        ["xpath=//input[@id='header-search-bar']", "xpath:attributes"],
+        ["xpath=//div[@id='SearchDropdown']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "catnip"
+    }, {
+      "id": "027486d9-3511-4834-922e-a54d006b9721",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=header-search-bar",
+      "targets": [
+        ["id=header-search-bar", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-bar", "css:finder"],
+        ["xpath=//input[@id='header-search-bar']", "xpath:attributes"],
+        ["xpath=//div[@id='SearchDropdown']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "870c0c2e-ebc8-4786-803c-9c808a19f4e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_3yqn7UgWZCfM22Sk-rcBbs:nth-child(1) > .cmR5BF4NpBUm3DBMZCmJS",
+      "targets": [
+        ["css=.\\_3yqn7UgWZCfM22Sk-rcBbs:nth-child(1) > .cmR5BF4NpBUm3DBMZCmJS", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sort')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "370e2b60-0917-48cb-8347-3ec3e3745a90",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5) .\\_2-cXnP74241WI7fpcpfPmg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79fa1abb-cf5d-47fa-9df8-cc7f9cc5995a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#t3_ajbx5n .\\_vaFo96phV6L5Hltvwcox:nth-child(2)",
+      "targets": [
+        ["css=#t3_ajbx5n .\\_vaFo96phV6L5Hltvwcox:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='t3_ajbx5n']/div/div/div[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'286 comments')]", "xpath:innerText"]
+      ],
+      "value": "286 comments"
+    }]
+  }, {
+    "id": "40317518-8ef1-4291-aa3d-23fbe6e7e94e",
+    "name": "FUN-JOIN-BUTTON-EXISTS",
+    "commands": [{
+      "id": "819592e0-cfd6-409a-93f1-bf1435bdcad5",
+      "comment": "",
+      "command": "open",
+      "target": "/r/cats/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc065543-ca63-4929-90ec-d31f3b848313",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_1Q_zPN5YtTLQVG72WhRuf3 > .\\_1LHxa-yaHJwrPK8kuyv_Y4",
+      "targets": [
+        ["css=.\\_1Q_zPN5YtTLQVG72WhRuf3 > .\\_1LHxa-yaHJwrPK8kuyv_Y4", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Join')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6a0f87e7-7a31-4cdb-aebf-dc9ede34e42c",
+    "name": "FUN-SIGNUP-LINK",
+    "commands": [{
+      "id": "60ce5b8c-a402-44cb-b325-44af49d09cc1",
+      "comment": "",
+      "command": "open",
+      "target": "/r/cats",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd341fa7-0d3d-47c6-86ba-2da9e68da394",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "linkText=Sign Up@href",
+      "targets": [],
+      "value": "href"
+    }, {
+      "id": "4e609b66-290c-4918-978e-3afe60552c34",
+      "comment": "",
+      "command": "assert",
+      "target": "href",
+      "targets": [],
+      "value": "https://www.reddit.com/register/?dest=https%3A%2F%2Fwww.reddit.com%2Fr%2Fcats"
+    }]
+  }, {
+    "id": "460d200d-5381-49af-8fbc-7347debea129",
+    "name": "FUN-RULE-3",
+    "commands": [{
+      "id": "4c55ef85-40b7-469d-84ea-4a75d01a623f",
+      "comment": "",
+      "command": "open",
+      "target": "/r/cats/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d144bda-352f-4616-afaa-e251f06c58d7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1b6830f-5ea5-4c78-ac16-ce99926233d2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,148.8000030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4322e27-22a7-4f54-be80-7dd754c4c6b7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1458.4000244140625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15f3b599-6864-49dd-900a-e5a4a28feb10",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1680)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbf03006-580b-4a40-b598-7795356ad50d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(3) .tbIApBd2DM_drfZQJjIum",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(3) .tbIApBd2DM_drfZQJjIum", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "No NSFW, animal abuse, or cruelty"
+    }]
+  }, {
+    "id": "fb9b6a1c-b3b8-4899-a082-da1f3fe83141",
+    "name": "FUN-RULES-11-ITEMS",
+    "commands": [{
+      "id": "4a80891b-ce6b-4119-8fc4-8ca2146415e9",
+      "comment": "",
+      "command": "open",
+      "target": "/r/cats/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "600dd5f7-4dfb-46b6-8b93-1990d92995f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7666dd44-407f-481d-a6ab-408a01804d7b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,487.20001220703125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6095821b-8f3a-404f-9102-a8d5d44855fc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1160)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d210344-1b3d-4166-9ad3-6d90bef47ab2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1767.199951171875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c4b90f4-f545-4c66-95f0-07e14a3c48b9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(1) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(1) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90d8aa13-f61b-41d9-8568-6902f5f2b08b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(2) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(2) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bd3f3d4-1182-4936-a8b9-016b4c580669",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(3) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(3) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3eccdd8f-56ba-4f9e-a9f6-9f080baec9a5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(4) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(4) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[4]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[4]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38bdb4fb-ea78-4c40-9971-9086151a7147",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(5) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(5) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[5]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[5]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2eb0d65-db19-4234-b8f8-bc7196520b93",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(6) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(6) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[6]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[6]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64339898-51fe-4e17-96bc-c3720de3d774",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(7) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(7) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[7]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[7]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efdd38a2-8800-44a7-9c8c-5bb9190a70aa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(8) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(8) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[8]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[8]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ad57082-42f5-4853-9638-448c462a71fb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(9) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(9) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[9]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[9]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ea32fd-ba7b-4204-a2e6-bceacdd172f5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(10) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(10) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[10]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[10]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad247fbf-5767-4f34-a52c-65eead7573d0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(11) .\\_36D5hmBSZbFxkFMkiWg6cY",
+      "targets": [
+        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(11) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[4]/div[2]/div/div[5]/div/div[2]/div[11]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[11]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "37c85274-b225-4311-b89a-0e8c26bcf2a9",
+    "name": "RedditCats",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4bd0fce8-a89d-40c9-81a2-986e11705484", "40317518-8ef1-4291-aa3d-23fbe6e7e94e", "460d200d-5381-49af-8fbc-7347debea129", "6a0f87e7-7a31-4cdb-aebf-dc9ede34e42c", "d966645d-2eee-4c69-8084-23bf04e6fb19", "fb9b6a1c-b3b8-4899-a082-da1f3fe83141"]
+  }],
+  "urls": ["https://www.reddit.com/"],
+  "plugins": []
+}
